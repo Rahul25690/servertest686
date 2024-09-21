@@ -1,5 +1,4 @@
-// Importing necessary modules
-const TelegramBot = require('node-telegram-bot-api');
+// Importing necessary modulesconst TelegramBot = require('node-telegram-bot-api');
 const token = '7257312691:AAHudesuLHwSlEmp2qcfHoBbqrZSk-LgtZQ';
 const bot = new TelegramBot(token, { polling: false, request: {
     agentOptions: {
@@ -19,7 +18,7 @@ const cron = require('node-cron');
 const axios = require('axios');
 
 // Your server URL
-const serverUrl = 'https://july-22-server.onrender.com/';
+const serverUrl = 'https://servertest686.onrender.com/';
 
 // Define the cron job
 cron.schedule('*/5 * * * *', async () => {

@@ -20,16 +20,6 @@ const axios = require('axios');
 // Your server URL
 const serverUrl = 'https://servertest686.onrender.com/';
 
-// Define the cron job
-cron.schedule('*/5 * * * *', async () => {
-    try {
-        const response = await axios.get(serverUrl);
-        console.log(`Pinged server at ${new Date().toISOString()}: ${response.status}`);
-    } catch (error) {
-        console.error(`Error pinging server at ${new Date().toISOString()}:`, error.message);
-    }
-});
-
 console.log('Cron job scheduled to ping the server every 5 minutes.');
 
 // Create the first Express app
